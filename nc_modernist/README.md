@@ -3,6 +3,7 @@
 [NC Modernist](http://www.ncmodernist.org/forsale.html) maintains a [Google Fusion Table](https://www.google.com/fusiontables/DataSource?docid=1qkrH6LkYzH-hAb1mbk8Fq4SbOkaJG5Y2QDekTFI) of modern homes for sale in North Carolina. This is used to return listings in the past number of specified days.
 
 ### Usage
+Ensure the environment variable `GOOGLE_API_KEY` contains a key or pass a key as an argument.
 
 Install prerequisites:
 ```
@@ -11,7 +12,7 @@ pip install -r requirements.txt
 
 Run the script:
 ```
-> python get_listings.py -d 3
+> python get_listings.py -d 3 [optional_api_key_here]
 Found 3 total results for the last 3 day(s)
 Added on: 8/31/18
 Price: $250000
